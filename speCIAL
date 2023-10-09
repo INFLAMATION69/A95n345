@@ -204,3 +204,145 @@ local args = {
 game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
   	end    
 })
+
+--------------------------------------------------------
+
+local Tab = Window:MakeTab({
+	Name = "Auto Pickup",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Iron",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace:FindFirstChild("Iron Ore")
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Sulfur",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace:FindFirstChild("Sulfur")
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Adamantium",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace:FindFirstChild("Adamantium Ore")
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Demonite",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace:FindFirstChild("Demonite Ore")
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Log",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace.Log
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Foliage",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace.Foliage
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Crate",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace:FindFirstChild("Item Crate")
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Mithril",
+	Callback = function()
+while wait() do
+
+local args = {
+    [1] = "Pickup",
+    [2] = workspace:FindFirstChild("Mithril Ore")
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+
+end
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
