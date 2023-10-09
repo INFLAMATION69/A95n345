@@ -107,3 +107,18 @@ Tab:AddButton({
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1208.72351, 532.662598, -1443.26892, 0.00367271411, 0.0210784581, 0.999771059, -3.7997961e-06, 0.999777794, -0.0210785866, -0.999993265, 7.36266375e-05, 0.0036719779)
 	end
 })
+
+Tab:AddButton({
+	Name = "Adamantium Rocks",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-612.613892, 882.819641, 2723.74829, 0.720318496, -8.66732535e-08, 0.693643451, 4.26065725e-08, 1, 8.07085456e-08, -0.693643451, -2.8582086e-08, 0.720318496)
+	end
+})
+
+Tab:AddButton({
+	Name = "THE Aetherite Rock",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-626.288147, 1228.56946, 2666.02393, 0.337147027, 3.04786454e-08, -0.941452026, -3.14559117e-08, 1, 2.1109285e-08, 0.941452026, 2.24973e-08, 0.337147027)
+	end
+})
+
