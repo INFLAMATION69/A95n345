@@ -2,6 +2,8 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Inflamation X: Island Gods", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+-------------------------------------------------------------
+
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
@@ -44,8 +46,10 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield
   	end    
 })
 
+------------------------------------------------------------------------------------------------
+
 local Tab = Window:MakeTab({
-	Name = "Teleport",
+	Name = "Teleports",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -122,3 +126,83 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-626.288
 	end
 })
 
+----------------------------------------------------------------------------
+
+local Tab = Window:MakeTab({
+	Name = "Masks/Abilities",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Fortune 🔮",
+	Callback = function()
+local args = {
+    [1] = "WearTemporaryMask",
+    [2] = "FortuneMask"
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Tiger 🐯",
+	Callback = function()
+local args = {
+    [1] = "WearTemporaryMask",
+    [2] = "TigerMask"
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Goblin 🦿",
+	Callback = function()
+local args = {
+    [1] = "WearTemporaryMask",
+    [2] = "GoblinMask"
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Crown 👑",
+	Callback = function()
+local args = {
+    [1] = "WearTemporaryMask",
+    [2] = "Crown"
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Champion 🐱‍👤",
+	Callback = function()
+local args = {
+    [1] = "WearTemporaryMask",
+    [2] = "ChampionMask"
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Lion 🦁",
+	Callback = function()
+local args = {
+    [1] = "WearTemporaryMask",
+    [2] = "LionMask"
+}
+
+game:GetService("ReplicatedStorage").SIGNAL_REMOTE:FireServer(unpack(args))
+  	end    
+})
